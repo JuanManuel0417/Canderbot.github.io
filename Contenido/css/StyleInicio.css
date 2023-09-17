@@ -2,12 +2,15 @@ body{
     padding: 0px;
     margin: 0px;
     border: 0px;
-    background-color: #243b55;
+    background-color: #011831;
+}
+
+.fondo {
+    background-image: linear-gradient(to bottom, #6693d1, #011831);
 }
 
 .superior {
     display: flex;
-    background-image: linear-gradient(to right, #95b3dc, #435695);
 }
 
 .superior img{
@@ -16,17 +19,15 @@ body{
 }
 
 .superior .mssbienvenida {
-    color: black;
+    color: white;
    margin-top: 35px;
 }
 
 .menu {
     margin-top: -50px;
-    background-image: linear-gradient(to right, #95b3dc, #435695);
     display: block;
     padding: 10px 5px;
 }
-
 
 .menu a{
     text-decoration: none;
@@ -35,7 +36,17 @@ body{
     font-size: 20px;
 }
 
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+
 h2{
+    color: white;
+}
+
+p{
     color: white;
 }
 
