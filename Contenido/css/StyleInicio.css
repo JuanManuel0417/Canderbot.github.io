@@ -1,10 +1,13 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    background-color: #011831;
-    color: white;
+body  {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     background-color: #011831;
+     color: white;
+     overflow-x: hidden;
+   
 }
+    
 
 .fondo {
     background-image: linear-gradient(to bottom, #6693d1, #011831);
@@ -12,6 +15,7 @@ body{
 
 .superior {
     display: flex;
+    width: 100%;
 }
 
 .superior img{
@@ -54,3 +58,34 @@ body{
 }
 
 
+.tendencias{
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+.buscador{
+    width: 400px;
+    justify-items:center ;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 15px;
+}
