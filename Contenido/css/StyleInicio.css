@@ -89,3 +89,46 @@ footer {
     background: rgba(255, 255, 255, 0.3); 
     border-radius: 15px;
 }
+
+.contenedor{
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.form_contacto{
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+}
+
+.nombre_contacto, .apellido_contacto, .mensaje {
+    padding: 10px 10px;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); 
+    margin-right: 25px;
+
+}
+
+.email_contacto{
+    width: 430px;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); 
+    margin-right: 10px;
+    margin-left: 10px; 
+}
+
+.
