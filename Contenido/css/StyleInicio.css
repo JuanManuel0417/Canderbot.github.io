@@ -66,7 +66,6 @@ body  {
 
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -91,12 +90,19 @@ footer {
 }
 
 .contenedor{
-    padding: 40px;
+    padding: 60px;
     background: rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+    margin: 40px;
 }
+
+legend{
+    font-size: 30px;
+}
+
+
 
 .nombre_contacto, .apellido_contacto, .mensaje {
     padding: 10px 10px;
@@ -128,7 +134,6 @@ footer {
 .boton_enviar{
     width: 70px;
     height: 30px;
-    margin-left: 250px;
     background: #243b55;
     font-size: 15px;
     color: #fff;
@@ -148,10 +153,4 @@ footer {
     outline-offset: 35px;
     text-shadow: 1px 1px 2px #427388;
 
-}
-
-
-.info{
-    margin-left: 900px;
-    margin-top: -250px;
 }
