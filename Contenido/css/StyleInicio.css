@@ -8,6 +8,10 @@ body  {
    
 }
     
+* {
+    box-sizing: border-box;
+  }
+  
 
 .fondo {
     background-image: linear-gradient(to bottom, #6693d1, #011831);
@@ -154,3 +158,44 @@ legend{
     text-shadow: 1px 1px 2px #427388;
 
 }
+
+
+
+.Contenidos{
+  list-style-type: none;
+  padding: 0;
+  display: flex; 
+  margin-left: 30px;
+}
+
+.estrellas {
+    display: inline-block;
+    cursor: pointer;
+    color: #ccc;
+    color: #ffcc00;
+    font-size: 24px;
+  }
+  
+
+.Rebel,
+.Supra,
+.Siete,
+.Rake{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-left: 20px;
+    transition: 200ms;
+}
+
+.Rebel:hover, .Supra:hover, .Siete:hover, .Rake:hover{
+    width: 420px;
+    border-radius: 20px;
+}
+
+
+  
+
+ 
