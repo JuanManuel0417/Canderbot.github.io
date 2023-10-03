@@ -177,10 +177,7 @@ legend{
   }
   
 
-.Rebel,
-.Supra,
-.Siete,
-.Rake{
+.Rebel, .Supra, .Siete, .Rake, .Fernanda_Castillo, .Glan_Vives, .Makana, .Luxe, .Paris{
     height: 400px;
     width: 400px;
     padding: 10px;
@@ -190,7 +187,7 @@ legend{
     transition: 200ms;
 }
 
-.Rebel:hover, .Supra:hover, .Siete:hover, .Rake:hover{
+.Rebel:hover, .Supra:hover, .Siete:hover, .Rake:hover, .Fernanda_Castillo:hover, .Glan_Vives:hover, .Makana:hover, .Luxe:hover, .Paris:hover{
     width: 420px;
     border-radius: 20px;
 }

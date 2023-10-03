@@ -6,7 +6,6 @@
     <title>Canderbot</title>
     <link rel="stylesheet" href="Contenido/css/StyleInicio.css">
     <link rel="icon" type="image/png" href="Contenido/Img/icono.ico">
-
 </head>
 
 <body>
@@ -26,7 +25,6 @@
                 <nav class="menu">
                     <ul>
                         <a href="index.html">Inicio</a>
-                        <a href="Agendar.html">Agendar citas</a>
                         <a href="citas.html">Citas agendadas</a>
                         <a href="favoritos.html">Favoritos</a>
                         <a href="contactanos.html">Contáctanos</a>
@@ -36,11 +34,22 @@
         </center>
     </div>
 
-    <img src="Contenido/Img/Canderbot.png" alt="Cargando Imagen" width="100%" class="banner">
+    <img src="Contenido/Img/Canderbot.png" alt="Cargando Imagen" width="100%" class="banner"><br><br>
 
 
-    <h2 align="center">SUGERENCIAS</h2>
-    <p align="center">Aca irian las cuentas sugeridas, pienso que no deben de ir mucho, masomenos unas 5</p><br><br>
+    <form align="center">
+        <div>
+            <span class="icon">🔍</span>
+            <input type="search" class="buscador" placeholder="Buscar"oninput="buscar()" >
+        </div>
+    </form>
+
+
+</div>
+
+
+    <h2 align="center">TENDENCIAS</h2>
+    <p align="center">En este apartado puedes observar los mejores locales con mejor desempeño en los últimos meses, si te llama la atención alguno de estos, puedes darle click y ver sus horarios juntos con sus precios, también puedes buscar el local de tu preferencias</p><br>
     
 
     
@@ -65,7 +74,7 @@
         <div class="Supra">
             <li>
                 <img src="Contenido/Img/Supra_Barber.avif" alt="" width="100%" class="img_1">
-                <h3>Rebel Barbers</h3>
+                <h3>Supra Barbers</h3>
                 <li class="estrellas" data-value="1">&#9733;</li>
                 <li class="estrellas" data-value="2">&#9733;</li>
                 <li class="estrellas" data-value="3">&#9733;</li>
@@ -104,16 +113,93 @@
                 <li class="estrellas" data-value="5">&#9733;</li>
                 <input type="hidden" name="reseña" id="reseña">
                 <h3>Carrera 96 49103, Metropolitano, Medellín, Antioquia</h3>
-
-
-
-
-
-
             </li>
         </div>
+
+        <div class="Fernanda_Castillo">
+            <li>
+                <img src="Contenido/Img/Fernanda_Castillo.avif" alt="" width="100%" height="210px"   class="img_1">
+                <h3>Fernanda Castillo</h3>
+            
+                <li class="estrellas" data-value="1">&#9733;</li>
+                <li class="estrellas" data-value="2">&#9733;</li>
+                <li class="estrellas" data-value="3">&#9733;</li>
+                <li class="estrellas" data-value="4">&#9733;</li>
+                <li class="estrellas" data-value="5">&#9733;</li>
+                <input type="hidden" name="reseña" id="reseña">
+                <h3>Diagonal 57 33120, Hermosa Provincia, Bello, Antioquia</h3>
+            </li>
+        </div>
+
+        <div class="Glan_Vives">
+            <li>
+                <img src="Contenido/Img/Glan_Vives.avif" alt="" width="100%"   class="img_1">
+                <h3>Glam Vives</h3>
+            
+                <li class="estrellas" data-value="1">&#9733;</li>
+                <li class="estrellas" data-value="2">&#9733;</li>
+                <li class="estrellas" data-value="3">&#9733;</li>
+                <li class="estrellas" data-value="4">&#9733;</li>
+                <li class="estrellas" data-value="5">&#9733;</li>
+                <input type="hidden" name="reseña" id="reseña">
+                <h3>Carrera 103 #41-34, San javier , Medellín, Antioquia </h3>
+            </li>
+         </div>
     </ul>
     
+    <ul type="none"class="Contenidos">
+        <div class="Makana">
+            <li>
+                <img src="Contenido/Img/makana.avif" alt="" width="100%"  height="210px"      class="img_1">
+                <h3>Makana Spa</h3>
+            
+                <li class="estrellas" data-value="1">&#9733;</li>
+                <li class="estrellas" data-value="2">&#9733;</li>
+                <li class="estrellas" data-value="3">&#9733;</li>
+                <li class="estrellas" data-value="4">&#9733;</li>
+                <li class="estrellas" data-value="5">&#9733;</li>
+                <input type="hidden" name="reseña" id="reseña">
+                <h3>Calle 101 # 74 - 83, Pedregal, Medellín, Antioquia</h3>
+            </li>
+         </div>
+
+         <div class="Luxe">
+            <li>
+                <img src="Contenido/Img/luxe_eyes.avif" alt="" width="100%" class="img_1">
+                <h3>Luxe Eyes</h3>
+            
+                <li class="estrellas" data-value="1">&#9733;</li>
+                <li class="estrellas" data-value="2">&#9733;</li>
+                <li class="estrellas" data-value="3">&#9733;</li>
+                <li class="estrellas" data-value="4">&#9733;</li>
+                <li class="estrellas" data-value="5">&#9733;</li>
+                <input type="hidden" name="reseña" id="reseña">
+                <h3>Luxe Eyes Spa Cejas y Pestañas, Carrera 37 10 - 35, Local 304, El Poblado</h3>
+            </li>
+         </div>
+
+         <div class="Paris">
+            <li>
+                <img src="Contenido/Img/paris_spa.avif" alt="" width="100%" height="215px" class="img_1">
+                <h3>Paris Spa</h3>
+            
+                <li class="estrellas" data-value="1">&#9733;</li>
+                <li class="estrellas" data-value="2">&#9733;</li>
+                <li class="estrellas" data-value="3">&#9733;</li>
+                <li class="estrellas" data-value="4">&#9733;</li>
+                <li class="estrellas" data-value="5">&#9733;</li>
+                <input type="hidden" name="reseña" id="reseña">
+                <h3>Carrera 71 2130, Paris, Bello, Antioquia</h3>
+            </li>
+         </div>
+
+
+
+
+
+
+
+    </ul>
 
 
 
@@ -133,7 +219,6 @@
     </footer>
         
 
-
-
+    <script src="index.js"></script>
 </body>
 </html>
