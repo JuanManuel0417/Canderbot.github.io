@@ -1,0 +1,53 @@
+Body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #011831;
+    color: white;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+    .fondo {
+        background-image: linear-gradient(to bottom, #6693d1, #011831);
+    }
+
+    .superior {
+        display: flex;
+        width: 100%;
+    }
+
+    .superior img{
+        position: relative;
+        margin-top: -20px;
+    }
+
+    .volver{
+        height: 35px;
+        width: 70px;
+        border-radius: 20px;
+        padding: 5px;
+        margin-top: 3%;
+    }
+
+    .menu {
+        margin-top: -50px;
+        display: block;
+        padding: 10px 5px;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+
+    .menu a:hover{
+        background-color: white;
+        color: black;
+    }
