@@ -11,6 +11,14 @@ Body{
     box-sizing: border-box;
   }
 
+  h2{
+        font-size: 45px;
+    }
+
+  h4{
+        font-size: 18px;
+    }
+
 
     .fondo {
         background-image: linear-gradient(to bottom, #6693d1, #011831);
@@ -31,7 +39,7 @@ Body{
         width: 70px;
         border-radius: 20px;
         padding: 5px;
-        margin-top: 3%;
+        margin-top: 35px;
     }
 
     .menu {
@@ -51,3 +59,122 @@ Body{
         background-color: white;
         color: black;
     }
+    
+
+    .Contenedor_Grande {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 30px;
+    }
+    
+    .Imagen_Grande {
+        width: 90%;
+        margin-left: 70px;
+        border-radius: 30px;
+        height: 400px;
+    }
+    
+    .Contenedor_pequeño {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 100px;
+    }
+    
+    .Imagen_Pequeña {
+        width: 80%;
+        margin-top: 10px; 
+        border-radius: 30px;
+    }
+
+
+    .Reservar {
+        width: 30%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px; 
+        float: right;
+        margin-right: 20px; 
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .Contenido-Desplazable {
+        padding-top: 20px; 
+    }
+
+
+    #Servicios{
+        margin-left: 30px;
+    }
+
+    .Servicios_Contenedor{
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        width: 65%;
+        padding: 5px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    
+    .expand-button{
+        background-color: #011831;
+        color: #fff;
+        width: 25px; 
+        border: none;
+        border-radius: 30%;
+        position: absolute; 
+        margin-left: 61%;
+        margin-top: -70px;
+        transition: 500ms;
+    }
+
+    .expand-button:hover{
+        background-color: #6693d1;
+        color: black;
+    }
+
+    .Acerca_De{
+        width: 65%;
+        margin-left: 30px;
+    }
+
+    iframe{
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    
