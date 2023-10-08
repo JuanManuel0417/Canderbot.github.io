@@ -35,11 +35,29 @@ Body{
     }
 
     .volver{
-        height: 35px;
-        width: 70px;
-        border-radius: 20px;
-        padding: 5px;
         margin-top: 35px;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: #243b55;
+        color: white;
+        font-size: 15px;
+        color: #fff;
+        border: 0 solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 1px solid;
+        outline-color: #243b55;
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .volver:Hover{
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 35px;
+        text-shadow: 1px 1px 2px #427388;
     }
 
     .menu {
@@ -105,6 +123,32 @@ Body{
         margin-top: 40px;
     }
 
+    .Boton_Reserva{
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: #243b55;
+        color: white;
+        font-size: 15px;
+        color: #fff;
+        border: 0 solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 1px solid;
+        outline-color: #243b55;
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .Boton_Reserva:Hover{
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+            0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 35px;
+        text-shadow: 1px 1px 2px #427388;
+    }
+
     .Contenido-Desplazable {
         padding-top: 20px; 
     }
@@ -151,8 +195,23 @@ Body{
     }
 
 
+    #Horario{
+        margin-left: 30px;
+    }
+ 
+    .Lunes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        width: 45%;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+    
 
-
+    
 
 
 
