@@ -88,6 +88,13 @@ Body{
         padding: 30px;
         margin: 30px;
     }
+
+    .Contenedor_Grand {        
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 30px;
+    }
     
     .Imagen_Grande {
         width: 90%;
@@ -95,12 +102,15 @@ Body{
         border-radius: 30px;
         height: 400px;
     }
+
     
     .Contenedor_pequeño {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-right: 100px;
+        margin-top: 30px;
+        width: 80%;
     }
     
     .Imagen_Pequeña {
@@ -142,8 +152,7 @@ Body{
 
     .Boton_Reserva:Hover{
         border: 1px solid;
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-            0 0 20px rgba(255, 255, 255, 0.2);
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(255, 255, 255, 0.2);
         outline-color: rgba(255, 255, 255, 0);
         outline-offset: 35px;
         text-shadow: 1px 1px 2px #427388;
