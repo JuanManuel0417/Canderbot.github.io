@@ -10,7 +10,9 @@
 
 <body>
 <center>
-  <form action="index.html" method="post" class="login_formulario"><br><br><br><br><br><br>
+
+<form action="login.html" method="get" class="login_formulario" id="registroForm">
+  <br><br><br><br><br><br>
 
     <img src="Img1/Logo_sin_fondo.png" alt="Cargando imagen" width="50%" class="logoform">
 
@@ -21,7 +23,7 @@
 
     <div>
       <label for="Nombre">Nombres</label>
-      <input type="text" id="Nombre" placeholder="Ingresa tus nombres" required>
+      <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa tus nombres" required>
     </div>
 
     <div>
@@ -29,10 +31,6 @@
       <input type="text" id="Apellido" placeholder="Ingresa tus Apellido" required>
     </div>
 
-    <div>
-        <label for="Fecha">Fecha de nacimiento</label>
-        <input type="date" id="Fecha" placeholder="Fecha de nacimiento" required>
-    </div>
 
     <div>
         <label for="correo">E-mail</label>
@@ -44,15 +42,29 @@
         <input type="password" id="password" placeholder="Ingresa una contraseña" required>
     </div>
 
-    <div><br>
-       <button class="boton_iniciar">Registrase</button><br>
-      </div>
+    <div>
+      <label for="Fecha">Hombre</label>
+      <input type="radio" id="Fecha" name="Genero" value="Hombre" required>
+
+      <label for="Fecha">Mujer</label>
+      <input type="radio" id="Fecha" name="Genero" value="Mujer" required>
+    </div>
+
+
 
     <div><br>
-      <a href="index.html">Iniciar sesión</a> 
+       <button class="boton_iniciar">Registrase</button><br>
+    </div>
+
+    <div><br>
+      <a href="login.html">Iniciar sesión</a> 
     </div>
   
   </form>
 </center>
+
+
+<script src="Java/register.js"></script>
+
 </body>
 </html>
