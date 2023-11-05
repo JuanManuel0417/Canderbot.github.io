@@ -1,18 +1,25 @@
 
-body{background-color:#243b55;
+body{
+  background-image: url('../Img1/Fondo_Logins.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
 }
 
 .login_formulario{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+
 }
 
 .login_formulario input[type="email"],
@@ -60,10 +67,13 @@ body{background-color:#243b55;
     text-shadow: 1px 1px 2px #427388;
 }
   
+  .Enlaces{
+    margin-top: 10px;
+  }
 
-  a {
+  .Enlaces, a {
     text-decoration: none;
-    color: #fff;
+    color: black;
   }
 
   

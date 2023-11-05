@@ -16,4 +16,6 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
 
     localStorage.setItem(email, JSON.stringify(usuario));
     alert("Registro exitoso. Puedes iniciar sesión ahora.");
+    
+    window.location.href = "login.html";
 });
