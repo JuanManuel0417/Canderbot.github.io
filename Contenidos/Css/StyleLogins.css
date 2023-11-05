@@ -39,7 +39,10 @@ body{
 
 
 .login_formulario input[type="email"]:focus,
-.login_formulario input[type="password"]:focus {
+.login_formulario input[type="password"]:focus,
+.login_formulario input[type="text"]:focus, 
+.login_formulario input[type="date"]:focus 
+ {
   border-bottom: 2px solid #243b55;
 }
 

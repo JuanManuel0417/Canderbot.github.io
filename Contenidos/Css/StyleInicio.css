@@ -128,61 +128,7 @@ body  {
     margin-left: 15%;
     font-size: 20px;
    }
-  
-  
-   .nombre_contacto, .apellido_contacto, .mensaje {
-       padding: 10px 10px;
-       font-size: 12px;
-       color: white;
-       margin-bottom: 15px;
-       border: none;
-       border-bottom: 1px solid black;
-       outline: none;
-       background: rgba(255, 255, 255, 0.3); 
-       margin-right: 25px;
-  
-   }
-  
-   .email_contacto{
-       width: 430px;
-       padding: 10px 10px;
-       font-size: 12px;
-       color: white;
-       margin-bottom: 15px;
-       border: none;
-       border-bottom: 1px solid black;
-       outline: none;
-       background: rgba(255, 255, 255, 0.3); 
-       margin-right: 10px;
-       margin-left: 10px; 
-   }
-  
-   .boton_enviar{
-       width: 70px;
-       height: 30px;
-       background: #243b55;
-       font-size: 15px;
-       color: #fff;
-       border: 0 solid;
-       box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-       outline: 1px solid;
-       outline-offset: 0px;
-       text-shadow: none;
-       transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  
-   }
-  
-   .boton_enviar:hover{
-       border: 1px solid;
-       box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-       outline-color: rgba(255, 255, 255, 0);
-       outline-offset: 35px;
-       text-shadow: 1px 1px 2px #427388;
-  
-   }
-  
-  
-  
+
    .Contenidos{
    list-style-type: none;
    padding: 0;
@@ -216,3 +162,55 @@ body  {
        width: 420px;
        border-radius: 20px;
    }
+
+   .contacto {
+    background-color: #fff;
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px; 
+    color: black;
+    border-radius: 15px;
+  }
+  
+ .contacto label {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  
+ .contacto input[type="text"],
+ .contacto input[type="email"],
+ .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; 
+  }
+
+  .contacto input[type="text"]:focus,
+  .contacto input[type="email"]:focus,
+  .contacto textarea:focus {
+    border-bottom: #243b55;
+  }
+
+   .boton_enviar{
+    width: 100px;
+    height: 40px;
+    background: #243b55;
+    font-size: 18px;
+    color: #fff;
+    border: 1 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.boton_enviar:hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 35px;
+    text-shadow: 1px 1px 2px #427388;
+
+}
