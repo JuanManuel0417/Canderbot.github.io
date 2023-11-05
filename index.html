@@ -4,233 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canderbot</title>
-    <link rel="stylesheet" href="Css/StyleInicio.css">
+    <link rel="stylesheet" href="Css/StyleLogins.css">
     <link rel="icon" type="image/png" href="Img1/icono.ico">
 </head>
 
 <body>
-    <div class="fondo">
-        <header class="superior">
-            <img src="Img1/Logo_sin_fondo.png" alt="Imagen Cargando" width="10%" class="logo">
 
-            <div class="bienvenida">
-                <h1 class="mssbienvenida">Hola <span id="mostrarNombre"></span>, bienvenid@ a Canderbot</h1>
-            </div>            
-                
-        </header>
+  <form action="login.html" method="get" class="login_formulario" id="registroForm">
+    <br><br><br>
 
+    <img src="Img1/Logo_sin_fondo.png" alt="Cargando imagen" width="50%" class="logoform">
 
-
-        <div id="menu">
-            <nav class="menu">
-                <ul>
-                    <a href="index.html">Inicio</a>
-                    <a href="citas.html">Citas agendadas</a>
-                    <a href="favoritos.html">Favoritos</a>
-                    <a href="contactanos.html">Contáctanos</a>
-                    <a href="conocenos.html">Conocenos</a>
-                    <a href="login.html">Cerrar sesión</a>
-                </ul>
-            </nav> 
-        </div>
+    <div class="login_titulo">
+      <h1 class="login_titulo">Bienvenido a Canderbot</h1>
+      <p>Registrate para tener una experiencia unica</p>
     </div>
 
-    <img src="Img1/Canderbot.png" alt="Cargando Imagen" width="100%" class="banner">
-
-
-    <form class="buscador_contenedor">
-        <div>
-            <span class="icon">🔍</span>
-            <input type="search" class="buscador" placeholder="Buscar">
-        </div>
-    </form>
-
-
-    <div class="Tendencias_Contenedor">
-        <h2>TENDENCIAS</h2>
-        <p><strong>En este apartado puedes observar los mejores locales con mejor desempeño en los últimos meses, si te llama la atención alguno de estos, puedes darle click y ver sus horarios juntos con sus precios, también puedes buscar el local de tu preferencia.</strong></p>
+    <div>
+      <label for="Nombre">Nombres</label>
+      <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa tus nombres" required>
     </div>
-  
+
+    <div>
+      <label for="Apellido">Apellidos</label>
+      <input type="text" id="Apellido" placeholder="Ingresa tus Apellido" required>
+    </div>
+
+
+    <div>
+      <label for="correo">E-mail</label>
+      <input type="email" id="correo" placeholder="Ingresa un e-mail" required>
+    </div>
+
+    <div>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Ingresa una contraseña" required>
+    </div>
+
+    <div>
+      <label for="Fecha">Hombre</label>
+      <input type="radio" id="Fecha" name="Genero" value="Hombre" required>
+
+      <label for="Fecha">Mujer</label>
+      <input type="radio" id="Fecha" name="Genero" value="Mujer" required>
+    </div>
     
+    <div><br>
+      <button class="boton_iniciar">Registrase</button><br>
+    </div>
 
+    <div><br>
+      <a href="login.html">Iniciar sesión</a> 
+    </div>
     
-    <ul type="none" class="Contenidos">
-        <a href="Servicios/rebel.html">
-            <div class="Rebel">
-                <li>
-                
-
-                    <img src="Img1/Rebel_Barber.avif" alt="" width="100%" class="img_1">
-                    <h3>Rebel Barbers</h3>
-                        
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Carrera 36 10-36, Poblado, Medellín, Antioquia </h3>
-                </li>
-            </div> 
-        </a>
-        
-        <a href="Servicios/supra.html">
-            <div class="Supra">
-                <li>
-                    <img src="Img1/Supra_Barber.avif" alt="" width="100%" class="img_1">
-                    <h3>Supra Barbers</h3>
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Mall Del Este, Carrera 25 #3-45, Local 120, El poblado, Medellín</h3>
-                </li>
-            </div>
-        </a>
-
-        <a href="Servicios/siete.html">
-            <div class="Siete">
-                <li>
-                    <img src="Img1/Siete_Barbershop.avif" alt="" width="100%" class="img_1">
-                    <h3>Siete Barbershop</h3>
-                    
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Calle 7 #35-44, Poblado, Medellín, Antioquia</h3>
-                </li><br>
-            </div>
-        </a>    
-    </ul>
-
-    <ul type="none"class="Contenidos">
-        <a href="Servicios/rake.html">
-            <div class="Rake">
-                <li>
-                    <img src="Img1/Rake_Fontalvo.avif" alt="" width="100%" class="img_1">
-                    <h3>Rake Fontalvo</h3>
-                    
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Carrera 96 49103, Metropolitano, Medellín, Antioquia</h3>
-                </li>
-            </div>
-        </a>
+  </form>
 
 
-       <a href="Servicios/fernanda.html">
-            <div class="Fernanda_Castillo">
-                <li>
-                    <img src="Img1/Fernanda_Castillo.avif" alt="" width="100%" height="210px"   class="img_1">
-                    <h3>Fernanda Castillo</h3>
-                
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Diagonal 57 33120, Hermosa Provincia, Bello, Antioquia</h3>
-                </li>
-            </div>
-       </a>
+  <script src="Java/register.js"></script>
 
-       <a href="Servicios/glam.html">
-            <div class="Glan_Vives">
-                <li>
-                    <img src="Img1/Glan_Vives.avif" alt="" width="100%"   class="img_1">
-                    <h3>Glam Vives</h3>
-                
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Carrera 103 #41-34, San javier , Medellín, Antioquia </h3>
-                </li>
-            </div>
-       </a>
-    </ul>
-    
-    <ul type="none"class="Contenidos">   
-        <a href="Servicios/makana.html">
-            <div class="Makana">
-                <li>
-                    <img src="Img1/makana.avif" alt="" width="100%"  height="210px"      class="img_1">
-                    <h3>Makana Spa</h3>
-                
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Calle 101 # 74 - 83, Pedregal, Medellín, Antioquia</h3>
-                </li>
-            </div>
-        </a>
-
-        <a href="Servicios/luxe.html">
-            <div class="Luxe">
-                <li>
-                    <img src="Img1/luxe_eyes.avif" alt="" width="100%" class="img_1">
-                    <h3>Luxe Eyes</h3>
-                
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Luxe Eyes Spa Cejas y Pestañas, Carrera 37 10 - 35, Local 304, El Poblado</h3>
-                </li>
-            </div>
-        </a>
-
-        <a href="Servicios/paris.html">
-            <div class="Paris">
-                <li>
-                    <img src="Img1/paris_spa.avif" alt="" width="100%" height="215px" class="img_1">
-                    <h3>Paris Spa</h3>
-                
-                    <li class="estrellas" data-value="1">&#9733;</li>
-                    <li class="estrellas" data-value="2">&#9733;</li>
-                    <li class="estrellas" data-value="3">&#9733;</li>
-                    <li class="estrellas" data-value="4">&#9733;</li>
-                    <li class="estrellas" data-value="5">&#9733;</li>
-                    <input type="hidden" name="reseña" id="reseña">
-                    <h3>Carrera 71 2130, Paris, Bello, Antioquia</h3>
-                </li>
-            </div>
-        </a>
-    </ul>
-
-    <footer>
-        <h5>CANDERBOT</h5>
-        <h5>Gonzalezmejiaj264@gmail.com</h5>
-        <div>
-           <a target="_blank" href="https://wa.link/ie7mun"><img src="Img1/Icon_Wpp.ico" alt="Cargando imagen" width="4%"></a>
-
-           <a target="_blank" href="https://instagram.com/wod._.store?igshid=YTQwZjQ0NmI0OA=="><img src="Img1/Icon_instagram.ico" alt="Cargando imagen" width="4%"></a>
-
-            <a target="_blank"href="https://www.facebook.com/WodStoree?mibextid=ZbWKwL"><img src="Img1/Icon_facebok.png" alt="Cargando imagen" width="3.8%"></a>
-        </div>
-    </footer>
-
-
-    <script src="Java/index.js"></script>
-    
-      
-        
 </body>
 </html>

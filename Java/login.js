@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         const usuario = JSON.parse(storedUser);
         if (usuario.password === password) {
             localStorage.setItem("currentUser", usuario.nombre);
-            window.location.href = "index.html";
+            window.location.href = "inicio.html";
         } else {
             alert("Contraseña incorrecta.");
         }
