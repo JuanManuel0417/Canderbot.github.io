@@ -1,0 +1,131 @@
+body  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    overflow-x: hidden;
+    background-image: url('../Img1/Fondo_Principal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.fondo {
+    background-image: linear-gradient(to bottom, #110f10, #211f20);
+}
+
+.superior {
+    display: flex;
+    width: 100%;
+}
+
+.superior img{
+    position: relative;
+    margin-top: -20px;
+}
+
+.superior .mssbienvenida {
+     color: white;
+     margin-top: 35px;
+}
+
+#menu{
+ text-align: center;
+ align-items: center;
+}
+
+.menu {
+    margin-top: -50px;
+    display: block;
+    padding: 10px 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.Titulo{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.Carrusel {
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 15%; 
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+  }
+  
+.Carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.Carrusel li{
+    width: 100%;
+    list-style: none;
+}
+
+.Carrusel img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.contenido_info{
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.info{
+    background-color:#211f20;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px white;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.contenido_info li{
+    margin-top: 10px;
+}
