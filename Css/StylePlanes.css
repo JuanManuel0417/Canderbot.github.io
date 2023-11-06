@@ -1,0 +1,103 @@
+body  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    overflow-x: hidden;
+    background-image: url('../Img1/Fondo_Principal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  
+  }
+   
+  * {
+   box-sizing: border-box;
+  }
+  
+  form{
+    align-items: center;
+    text-align: center;
+  }
+  
+   a{
+       text-decoration: none;
+       color: inherit;
+   }
+  
+   .fondo {
+       background-image: linear-gradient(to bottom, #110f10, #211f20);
+   }
+  
+   .superior {
+       display: flex;
+       width: 100%;
+   }
+  
+   .superior img{
+       position: relative;
+       margin-top: -20px;
+   }
+  
+   .superior .mssbienvenida {
+        color: white;
+        margin-top: 35px;
+   }
+  
+  #menu{
+    text-align: center;
+    align-items: center;
+  }
+  
+   .menu {
+       margin-top: -50px;
+       display: block;
+       padding: 10px 5px;
+   }
+  
+   .menu a{
+       text-decoration: none;
+       color: white;
+       padding: 0px 10px;
+       font-size: 20px;
+   }
+  
+   .menu a:hover{
+       background-color: white;
+       color: black;
+   }
+
+   footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.Contenidos{
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    margin-left: 30px;
+    }
+
+.Rebel, .Supra, .Siete, .Rake, .Fernanda_Castillo, .Glan_Vives, .Makana, .Luxe, .Paris{
+    color: black;
+    height: 600px;
+    width: 400px;
+    padding: 10px;
+    background: #dac6ff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    margin-left: 20px;
+    transition: 200ms;
+ }
+
+ .Rebel:hover, .Supra:hover, .Siete:hover, .Rake:hover, .Fernanda_Castillo:hover, .Glan_Vives:hover, .Makana:hover, .Luxe:hover, .Paris:hover{
+    width: 420px;
+    border-radius: 20px;
+}
