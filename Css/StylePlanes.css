@@ -89,13 +89,21 @@ body  {
         height: 600px;
         width: 400px;
         padding: 10px;
-        background-image: linear-gradient(to bottom, #fffcf0, #211f20);
+        background-color: #ffff94;
         box-sizing: border-box;
         box-shadow: 0 15px 25px rgba(0,0,0,.6);
         border-radius: 10px;
         margin-left: 20px;
         transition: 200ms;
- }
+    }
+
+    .Titulo, .Precio, .Imagen_principal{
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+
 
  .Premium{
         color: white;
@@ -134,3 +142,9 @@ body  {
         justify-content: center;
         margin-top: 10%;
     }
+
+
+
+
+
+    
