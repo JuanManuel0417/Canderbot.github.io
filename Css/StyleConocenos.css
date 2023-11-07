@@ -129,3 +129,37 @@ footer {
 .contenido_info li{
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .superior {
+        display: block;
+        text-align: center;
+    }
+
+    .superior .logo {
+        width: 30%; 
+        margin: 20px auto; 
+    }
+
+    .bienvenida {
+        margin: 20px auto; 
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        padding: 0;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
