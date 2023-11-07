@@ -1,13 +1,13 @@
 body  {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: white;
-    overflow-x: hidden;
-    background-image: url('../Img1/Fondo_Principal.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: white;
+        overflow-x: hidden;
+        background-image: url('../Img1/Fondo_Principal.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
   
   }
    
@@ -16,8 +16,8 @@ body  {
   }
   
   form{
-    align-items: center;
-    text-align: center;
+        align-items: center;
+        text-align: center;
   }
   
    a{
@@ -45,8 +45,8 @@ body  {
    }
   
   #menu{
-    text-align: center;
-    align-items: center;
+        text-align: center;
+        align-items: center;
   }
   
    .menu {
@@ -68,36 +68,69 @@ body  {
    }
 
    footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-
-.Contenidos{
-    list-style-type: none;
-    padding: 0;
-    display: flex; 
-    margin-left: 30px;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 20px;
     }
 
-.Rebel, .Supra, .Siete, .Rake, .Fernanda_Castillo, .Glan_Vives, .Makana, .Luxe, .Paris{
-    color: black;
-    height: 600px;
-    width: 400px;
-    padding: 10px;
-    background: #dac6ff;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-    margin-left: 20px;
-    transition: 200ms;
+
+    .Contenidos{
+        list-style-type: none;
+        padding: 0;
+        display: flex; 
+        margin-left: 30px;
+    }
+
+    .Basico{
+        color: black;
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        background-image: linear-gradient(to bottom, #fffcf0, #211f20);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        margin-left: 20px;
+        transition: 200ms;
  }
 
- .Rebel:hover, .Supra:hover, .Siete:hover, .Rake:hover, .Fernanda_Castillo:hover, .Glan_Vives:hover, .Makana:hover, .Luxe:hover, .Paris:hover{
-    width: 420px;
-    border-radius: 20px;
-}
+ .Premium{
+        color: white;
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        background-image: linear-gradient(to bottom, #fffcf0, #211f20);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        margin-left: 20px;
+        transition: 200ms;
+ }
+
+ .Empresarial{
+        color: #40b09d;
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        background-image: linear-gradient(to bottom, #fffcf0, #211f20);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        margin-left: 20px;
+        transition: 200ms;
+ }
+
+    .Basico:hover, .Premium:hover, .Empresarial:hover{
+        width: 420px;
+        border-radius: 20px;
+    }
+
+    .Premium .imagen{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
