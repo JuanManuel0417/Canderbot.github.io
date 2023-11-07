@@ -163,6 +163,40 @@ body  {
        border-radius: 20px;
    }
 
+   @media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .superior .mssbienvenida {
+        font-size: 18px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .Tendencias_Contenedor {
+        font-size: 18px;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .Contenidos {
+        flex-wrap: wrap;
+    }
+
+    .Rebel, .Supra, .Siete, .Rake, .Fernanda_Castillo, .Glan_Vives, .Makana, .Luxe, .Paris {
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+}
+
+
    .contacto {
     background-color: #fff;
     padding: 20px; 
