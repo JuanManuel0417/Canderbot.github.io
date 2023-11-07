@@ -168,12 +168,32 @@ body  {
         font-size: 14px;
     }
 
-    .superior .mssbienvenida {
-        font-size: 18px;
+    .superior {
+        display: block;
+        text-align: center;
+    }
+
+    .superior .logo {
+        width: 30%; 
+        margin: 20px auto; 
+    }
+
+    .bienvenida {
+        margin: 20px auto; 
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        padding: 0;
     }
 
     .menu a {
-        font-size: 16px;
+        display: block;
+        padding: 10px;
+        font-size: 18px;
     }
 
     .Tendencias_Contenedor {
