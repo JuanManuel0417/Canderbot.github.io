@@ -10,156 +10,201 @@ body  {
     background-attachment: fixed;
 }
 
-.fondo {
-    background-image: linear-gradient(to bottom, #110f10, #211f20);
-}
-
-.superior {
-    display: flex;
-    width: 100%;
-}
-
-.superior img{
-    position: relative;
-    margin-top: -20px;
-}
-
-.superior .mssbienvenida {
-     color: white;
-     margin-top: 35px;
-}
-
-#menu{
- text-align: center;
- align-items: center;
-}
-
-.menu {
-    margin-top: -50px;
-    display: block;
-    padding: 10px 5px;
-}
-
-.menu a{
-    text-decoration: none;
-    color: white;
-    padding: 0px 10px;
-    font-size: 20px;
-}
-
-.menu a:hover{
-    background-color: white;
-    color: black;
-}
-
-footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-
-.Titulo{
-    text-align: center;
-    font-size: 40px;
-}
-
-
-.Carrusel {
-    width: 70%;
-    height: auto;
-    margin-top: 5%;
-    margin-left: 15%; 
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-    border-radius: 10%;
-  }
-  
-.Carrusel ul{
-    display: flex;
-    padding: 0;
-    width: 500%;
-    animation: slide 15s infinite alternate ease-in-out;
-}
-
-.Carrusel li{
-    width: 100%;
-    list-style: none;
-}
-
-.Carrusel img{
-    width: 100%;
-}
-
-@keyframes slide{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
-
-.contenido_info{
-    margin-left: 10%;
-    padding: 10px;
-}
-
-.info{
-    background-color:#211f20;
-    padding: 10px;
-    width: 80%;
-    text-align: center;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 5px 5px white;
-    margin-top: 5%;
-    margin-left: 5%;
-    font-size: 20px;
-}
-
-.contenido_info li{
-    margin-top: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
+     /* Fondo del nav, menu */
+     .fondo {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+    }
+   
+    /* Configuracion del img y mensaje bienvenida*/
+    .superior {
+        display: flex;
+        width: 100%;
+    }
+   
+    .superior img{
+        position: relative;
+        margin-top: -20px;
+    }
+   
+    .superior .mssbienvenida {
+         color: white;
+         margin-top: 35px;
+    }
+   
+    /* Configuracion del menu */
+   #menu{
+     text-align: center;
+     align-items: center;
+   }
+   
+    .menu {
+        margin-top: -50px;
+        display: block;
+        padding: 10px 5px;
+    }
+   
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+   
+    .menu a:hover{
+        background-color: white;
+        color: black;
     }
 
-    .superior {
-        display: block;
+    /* estilos del ul-Planes */
+    .Contenidos{
+        list-style-type: none;
+        padding: 0;
+        display: flex; 
+        margin-left: 30px;
+        margin-bottom: 8%;
+    }
+
+    .Titulo{
+        text-align: center;
+        font-size: 40px;
+    }
+
+
+    .Carrusel {
+        width: 70%;
+        height: auto;
+        margin-top: 5%;
+        margin-left: 15%; 
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        border-radius: 10%;
+    }
+    
+    .Carrusel ul{
+        display: flex;
+        padding: 0;
+        width: 500%;
+        animation: slide 15s infinite alternate ease-in-out;
+    }
+
+    .Carrusel li{
+        width: 100%;
+        list-style: none;
+    }
+
+    .Carrusel img{
+        width: 100%;
+    }
+
+    @keyframes slide{
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+
+    .contenido_info{
+        margin-left: 10%;
+        padding: 10px;
+    }
+
+
+    .info{
+        background-color:#211f20;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px 5px white;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 20px;
+    }
+
+    .info_ultimo{
+        background-color:#211f20;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px 5px white;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 8%;
+        font-size: 20px;
+    }
+
+    .contenido_info li{
+        margin-top: 10px;
+    }
+
+
+    /* Estilos del pie de página (Footer) */
+    .pie_pagina {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+        color: white;
+        padding: 5px;
         text-align: center;
     }
 
-    .superior .logo {
-        width: 30%; 
-        margin: 20px auto; 
+    .pie_pagina h4 {
+        margin-bottom: 10px;
     }
 
-    .bienvenida {
-        margin: 20px auto; 
+    .info_contacto p, .redes_sociales a, .derechos p {
+        margin: 5px 0;
     }
 
-    .menu {
-        margin-top: 20px;
+    .redes_sociales a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
     }
 
-    .menu ul {
-        padding: 0;
+    .redes_sociales a:hover {
+        text-decoration: underline;
     }
 
-    .menu a {
-        display: block;
-        padding: 10px;
-        font-size: 18px;
+
+    
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+
+        .superior {
+            display: block;
+            text-align: center;
+        }
+
+        .superior .logo {
+            width: 30%; 
+            margin: 20px auto; 
+        }
+
+        .bienvenida {
+            margin: 20px auto; 
+        }
+
+        .menu {
+            margin-top: 20px;
+        }
+
+        .menu ul {
+            padding: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+        }
     }
-}

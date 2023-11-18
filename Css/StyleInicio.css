@@ -1,19 +1,19 @@
-body  {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: white;
-    overflow-x: hidden;
-    background-image: url('../Img1/Fondo_Principal.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-  
+* {
+    box-sizing: border-box;
+   }
+
+    body  {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: white;
+        overflow-x: hidden; /* contenido que se extienda se oculta */
+        background-image: url('../Img1/Fondo_Principal.jpg');
+        background-size: cover; /* Ajusta el tamaño completo */
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
   }
    
-  * {
-   box-sizing: border-box;
-  }
   
   form{
     align-items: center;
@@ -22,13 +22,14 @@ body  {
   
    a{
        text-decoration: none;
-       color: inherit;
    }
   
+   /* Fondo del nav, menu */
    .fondo {
-       background-image: linear-gradient(to bottom, #110f10, #211f20);
+       background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
    }
   
+   /* Configuracion del img y mensaje bienvenida*/
    .superior {
        display: flex;
        width: 100%;
@@ -44,6 +45,7 @@ body  {
         margin-top: 35px;
    }
   
+   /* Configuracion del menu */
   #menu{
     text-align: center;
     align-items: center;
@@ -66,29 +68,24 @@ body  {
        background-color: white;
        color: black;
    }
-  
-  
-   .tendencias{
-       text-align: center;
-       margin: 20px;
+    
+
+   /* Titulo h2 de "Tendencias" */
+   .Tendencias_Contenedor{
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        margin-left: 15%;
+        font-size: 20px;
    }
-  
-  
-  
-   footer {
-       bottom: 0;
-       width: 100%;
-       text-align: center;
-       padding: 20px;
-       margin-top: 20px;
-       font-size: 20px;
-   }
-  
-   .buscador_contenedor{
-    margin-top: 20px;
-    text-align: center;
-    align-items: center;
-  }
+
+
+   /* Estilos del buscador */
+    .buscador_contenedor{
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+    }
   
    .buscador{
        width: 400px;
@@ -99,58 +96,37 @@ body  {
        margin-bottom: 15px;
        border: none;
        border-bottom: 1px solid black;
-       outline: none;
+       outline: none; /* Quita el contorno */
        background: #848679; 
        border-radius: 15px;
    }
   
    .buscador::placeholder{
-    color: white;
+       color: white;
    }
 
-   .contenedor{
-       padding: 60px;
-       background: rgba(255, 255, 255, 0.5);
-       box-sizing: border-box;
-       box-shadow: 0 15px 25px rgba(0,0,0,.6);
-       border-radius: 10px;
-       margin: 40px;
-   }
-  
-   legend{
-       font-size: 30px;
-   }
-  
-   .Tendencias_Contenedor{
-    align-items: center;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-    font-size: 20px;
-   }
 
+  /* Estilos del ul, cada ul contiene 3 li principales, osea 3 filas */
    .Contenidos{
-   list-style-type: none;
-   padding: 0;
-   display: flex; 
-   margin-left: 30px;
+        list-style-type: none;
+        padding: 0;
+        display: flex; 
+        margin-left: 30px;
    }
   
    .estrellas {
        display: inline-block;
-       cursor: pointer;
-       color: #ccc;
        color: #ffcc00;
        font-size: 24px;
    }
    
-  
+  /* Estilos de cada uno de los locales disponibles */
    .Rebel, .Supra, .Siete, .Rake, .Fernanda_Castillo, .Glan_Vives, .Makana, .Luxe, .Paris{
       color: black;
       height: 400px;
       width: 400px;
       padding: 10px;
-      background: #dac6ff;
+      background: #d8e7e3;
       box-sizing: border-box;
       box-shadow: 0 15px 25px rgba(0,0,0,.6);
       border-radius: 10px;
@@ -164,7 +140,91 @@ body  {
    }
 
 
-   
+ /* Titulo  h2 "Reseñas" */
+   #Reseñas{
+        text-align: center;
+        margin-top: 5%;
+        font-size: 30px;
+   }
+
+
+   /* Estilos de las reseñas */
+   .opiniones-container {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    .ultima_opinion{
+        max-width: 600px;
+        margin: 30px auto 8%;
+    }
+
+    .opinion {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .avatar {
+        margin-right: 10px;
+    }
+
+    .avatar img {
+        width: 50px; 
+        border-radius: 50%; 
+    }
+
+    .contenido-opinion {
+        flex-grow: 1; /* Ocupa el espacio disponible */
+    }
+
+    .nombre {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .estrellas_2{
+        display: inline-block;
+        cursor: pointer;
+        color: #ffcc00;
+        font-size: 24px;
+    }
+
+    .comentario {
+        margin-top: 10px;
+    }
+
+
+    /* Estilos del pie de página (Footer) */
+    .pie_pagina {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .pie_pagina h4 {
+        margin-bottom: 10px;
+    }
+
+    .info_contacto p, .redes_sociales a, .derechos p {
+        margin: 5px 0;
+    }
+
+    .redes_sociales a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .redes_sociales a:hover {
+        text-decoration: underline;
+    }
+
+
+
    @media screen and (max-width: 768px) {
         body {
             font-size: 14px;

@@ -1,4 +1,8 @@
-body  {
+* {
+    box-sizing: border-box;
+   }
+
+    body  {
         margin: 0;
         padding: 0;
         border: 0;
@@ -8,12 +12,8 @@ body  {
         background-size: cover;
         background-repeat: no-repeat; 
         background-attachment: fixed;
-  
-  }
-   
-  * {
-   box-sizing: border-box;
-  }
+    }
+    
   
   form{
         align-items: center;
@@ -25,63 +25,58 @@ body  {
        color: inherit;
    }
   
-   .fondo {
-       background-image: linear-gradient(to bottom, #110f10, #211f20);
-   }
-  
-   .superior {
-       display: flex;
-       width: 100%;
-   }
-  
-   .superior img{
-       position: relative;
-       margin-top: -20px;
-   }
-  
-   .superior .mssbienvenida {
-        color: white;
-        margin-top: 35px;
-   }
-  
-  #menu{
-        text-align: center;
-        align-items: center;
-  }
-  
-   .menu {
-       margin-top: -50px;
-       display: block;
-       padding: 10px 5px;
-   }
-  
-   .menu a{
-       text-decoration: none;
-       color: white;
-       padding: 0px 10px;
-       font-size: 20px;
-   }
-  
-   .menu a:hover{
-       background-color: white;
-       color: black;
-   }
-
-   footer {
-        bottom: 0;
+     /* Fondo del nav, menu */
+     .fondo {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+    }
+   
+    /* Configuracion del img y mensaje bienvenida*/
+    .superior {
+        display: flex;
         width: 100%;
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
+    }
+   
+    .superior img{
+        position: relative;
+        margin-top: -20px;
+    }
+   
+    .superior .mssbienvenida {
+         color: white;
+         margin-top: 35px;
+    }
+   
+    /* Configuracion del menu */
+   #menu{
+     text-align: center;
+     align-items: center;
+   }
+   
+    .menu {
+        margin-top: -50px;
+        display: block;
+        padding: 10px 5px;
+    }
+   
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 0px 10px;
         font-size: 20px;
     }
+   
+    .menu a:hover{
+        background-color: white;
+        color: black;
+    }
 
-
+    /* estilos del ul-Planes */
     .Contenidos{
         list-style-type: none;
         padding: 0;
         display: flex; 
         margin-left: 30px;
+        margin-bottom: 8%;
     }
 
     #Canderbot{
@@ -91,6 +86,7 @@ body  {
         margin-top: 7%;
         margin-bottom: 7%;
     }
+
 
     .Basico{
         color: black;
@@ -271,4 +267,31 @@ body  {
         outline-color: rgba(255, 255, 255, 0);
         outline-offset: 35px;
         text-shadow: 1px 1px 2px #0e6461;
+    }
+
+
+    /* Estilos del pie de página (Footer) */
+    .pie_pagina {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .pie_pagina h4 {
+        margin-bottom: 10px;
+    }
+
+    .info_contacto p, .redes_sociales a, .derechos p {
+        margin: 5px 0;
+    }
+
+    .redes_sociales a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .redes_sociales a:hover {
+        text-decoration: underline;
     }
