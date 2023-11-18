@@ -1,15 +1,20 @@
-Body{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-color: #011831;
-    color: white;
-    overflow-x: hidden;
-}
-
 * {
     box-sizing: border-box;
   }
+
+    body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: white;
+        overflow-x: hidden; /* contenido que se extienda se oculta */
+        background-image: url('../Img3/Fondo.jpg');
+        background-size: cover; /* Ajusta el tamaño completo */
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+
+    }
+
 
   h2{
         font-size: 45px;
@@ -21,19 +26,26 @@ Body{
 
 
     .fondo {
-        background-image: linear-gradient(to bottom, #6693d1, #011831);
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
     }
-
+   
+    /* Configuracion del menu superior*/
     .superior {
         display: flex;
         width: 100%;
     }
-
+   
     .superior img{
         position: relative;
         margin-top: -20px;
     }
 
+    .menu{
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Boton Volver*/
     .volver{
         margin-top: 35px;
         border-radius: 10px;
@@ -79,18 +91,20 @@ Body{
     }
     
 
+    /* Contenedor para las imagenes que tienen 3, una grande dos pequeñas */
     .Contenedor_Grande {
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
-        background: rgba(255, 255, 255, 0.5);
+        background-color:  #cde0e0;
         border-radius: 10px;
         padding: 30px;
         margin: 30px;
     }
 
+    /* Contenedor para una sola imagen */
     .Contenedor_Grand {        
-        background: rgba(255, 255, 255, 0.5);
+        background:  #cde0e0;
         border-radius: 10px;
         padding: 30px;
         margin: 30px;
@@ -120,18 +134,24 @@ Body{
     }
 
 
+    /* Estilos para cuadro de reserva flotante */
     .Reservar {
+        color: black;
         width: 30%;
-        position: -webkit-sticky;
         position: sticky;
         top: 20px; 
         float: right;
         margin-right: 20px; 
-        background: rgba(255, 255, 255, 0.5);
+        background:  #cde0e0;
         border-radius: 10px;
         padding: 10px;
         margin-top: 40px;
     }
+
+    #Texto_reserva{
+        text-align: center;
+    }
+
 
     .Boton_Reserva{
         border-radius: 10px;
@@ -163,12 +183,14 @@ Body{
     }
 
 
+    /* Estilos de los servicios del local */
     #Servicios{
         margin-left: 30px;
     }
 
     .Servicios_Contenedor{
-        background: rgba(255, 255, 255, 0.5);
+        color: black;
+        background: #cde0e0;
         border-radius: 10px;
         width: 65%;
         padding: 5px;
@@ -194,10 +216,24 @@ Body{
         color: black;
     }
 
-    .Acerca_De{
-        width: 65%;
+
+    /* Estilo del titulo "Acerca De" */
+    #Acerca{
         margin-left: 30px;
     }
+
+    /* Estilo del contenido de "Acerca De" */
+    .Acerca_De{
+        color: black;
+        background-color: #cde0e0;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        width: 65%;
+        border-radius: 10px;
+        width: 65%;
+        padding: 5px;
+    }
+
 
     iframe{
         margin-left: 30px;
@@ -206,6 +242,18 @@ Body{
 
     #Horario{
         margin-left: 30px;
+    }
+
+    .horas{
+        color: black;
+        background-color: #cde0e0;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        width: 65%;
+        border-radius: 10px;
+        width: 65%;
+        padding: 5px;
+        margin-bottom: 100px;
     }
  
     .Lunes {
@@ -218,31 +266,30 @@ Body{
         margin-left: 30px;
         margin-bottom: 5px;
     }
-    
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    footer {
-        bottom: 0;
-        width: 100%;
+     /* Estilos del pie de página (Footer) */
+     .pie_pagina {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+        color: white;
+        padding: 5px;
         text-align: center;
-        padding: 20px;
-        margin-top: 20px;
     }
 
+    .pie_pagina h4 {
+        margin-bottom: 10px;
+    }
+
+    .info_contacto p, .redes_sociales a, .derechos p {
+        margin: 5px 0;
+    }
+
+    .redes_sociales a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .redes_sociales a:hover {
+        text-decoration: underline;
+    }
     
