@@ -83,7 +83,7 @@ body{
     }
   
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       .login_formulario {
         width: 90%; 
         padding: 20px;

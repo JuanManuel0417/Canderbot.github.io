@@ -115,3 +115,56 @@
     .redes_sociales a:hover {
         text-decoration: underline;
     }
+
+
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+
+        .superior {
+            display: block;
+            text-align: center;
+        }
+
+        .superior .logo {
+            width: 30%; 
+            margin: 20px auto; 
+        }
+
+        .bienvenida {
+            margin: 20px auto; 
+        }
+
+        .menu {
+            margin-top: 20px;
+        }
+
+        .menu ul {
+            padding: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+        }
+    
+    
+        .reserva-info-container {
+            margin: 10px;
+        }
+    
+        .margenes {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    
+        .reserva-info-container h2 {
+            font-size: 30px;
+        }
+    
+        .reserva-info-container p {
+            font-size: 16px;
+        }
+    }

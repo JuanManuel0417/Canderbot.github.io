@@ -71,12 +71,13 @@
     }
 
     /* estilos del ul-Planes */
-    .Contenidos{
+    .Contenidos {
         list-style-type: none;
         padding: 0;
-        display: flex; 
-        margin-left: 30px;
-        margin-bottom: 8%;
+        display: flex;
+        flex-wrap: wrap; /* Ajusta los contenedores para que se envuelvan en dispositivos pequeños */
+        justify-content: center; /* Centra los contenedores */
+        margin-top: 30px;
     }
 
     #Canderbot{
@@ -286,7 +287,7 @@
     
     #formulario {
         color: black;
-        background-image: url('../Img1/Fondo_Principal.jpg');
+        background-image: url('../Img1/fondo_compra.jpg');
         background-size: cover;
         background-repeat: no-repeat; 
         background-attachment: fixed;
@@ -297,12 +298,16 @@
         position: relative; 
     }
     
+    .titulo_compra{
+        font-size: 40px;
+    }
+
     #cerrar {
         position: absolute;
         top: 10px;
         right: 10px;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 30px;
         color: #f70808;
     }
 
@@ -316,7 +321,7 @@
         border: none;
         border-bottom: 1px solid black;
         outline: none;
-        background: rgba(255, 255, 255, 0.3); 
+        background: rgba(255, 255, 255); 
     }
     
 
@@ -337,6 +342,13 @@
         transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
     }
 
+    .input_reserva:hover{
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 35px;
+        text-shadow: 1px 1px 2px #427388;
+    }
 
 
     /* Estilos del pie de página (Footer) */
@@ -363,4 +375,51 @@
 
     .redes_sociales a:hover{ 
         text-decoration: underline;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+
+        .superior {
+            display: block;
+            text-align: center;
+        }
+
+        .superior .logo {
+            width: 30%; 
+            margin: 20px auto; 
+        }
+
+        .bienvenida {
+            margin: 20px auto; 
+        }
+
+        .menu {
+            margin-top: 20px;
+        }
+
+        .menu ul {
+            padding: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .Contenidos {
+            margin-top: 10px; /* Ajuste de margen en dispositivos móviles */
+        }
+    
+        .Basico,
+        .Premium,
+        .Empresarial {
+            width: 90%; /* Ajuste el ancho según tus necesidades */
+            margin-bottom: 20px; /* Ajuste el margen inferior según tus necesidades */
+        }
+
     }
