@@ -41,7 +41,26 @@
     <div class="Reservar">
         <div id="Texto_reserva">
             <h2>LUXE EYES</h2>
-            <button class="Boton_Reserva">Reservar Ahora</button>
+            <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar Ahora</button>
+            <div id="overlay">
+                <div id="formulario">
+                    <span id="cerrar" onclick="cerrarFormulario()">x</span>
+                    <h2>Reserva Ya</h2>
+                    <form>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                        <input type="text" id="documento" placeholder="Ingresa tu documento">
+    
+                        <input type="tel" id="tel" placeholder="Ingresa tu telefono"> 
+
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                        <input type="date" id="date" placeholder="Ingresa tu fecha de reserva">
+            
+                        <button type="button" onclick="guardarReserva(); alert('Reserva guardada.');" class="input_reserva">Reservar</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -58,7 +77,7 @@
                 <h3>Pestañas Hibridas</h3>
                 <h4>2 h</h4>
                 <h4>160.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -67,7 +86,7 @@
                 <h3>Lifting</h3>
                 <h4>1 h</h4>
                 <h4>120.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -76,7 +95,7 @@
                 <h3>Laminado de cejas</h3>
                 <h4>30 min</h4>
                 <h4>120.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -85,7 +104,7 @@
                 <h3>Pestañas Pelo a Pelo</h3>
                 <h4>1 h 30 min</h4>
                 <h4>130.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
     </div>
@@ -158,6 +177,8 @@
             <p>&copy; 2023 Canderbot. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
+
+    <script src="Java/servicios.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+   }
+
+    body  {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: white;
+        overflow-x: hidden; /* contenido que se extienda se oculta */
+        background-image: url('../Img1/Fondo_Principal.jpg');
+        background-size: cover; /* Ajusta el tamaño completo */
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        
+    }
+   
+   a{
+       text-decoration: none;
+   }
+  
+   /* Fondo del nav, menu */
+   .fondo {
+       background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+   }
+  
+   /* Configuracion del header*/
+   .superior {
+       display: flex;
+       width: 100%;
+   }
+  
+  
+   /* Configuracion del menu */
+  #menu{
+    text-align: center;
+    align-items: center;
+  }
+  
+   .menu {
+       margin-top: -50px;
+       display: block;
+       padding: 10px 5px;
+   }
+  
+   .menu a{
+       text-decoration: none;
+       color: white;
+       padding: 0px 10px;
+       font-size: 20px;
+   }
+  
+   .menu a:hover{
+       background-color: white;
+       color: black;
+   }
+
+
+
+
+   /* Estilos para el contenedor de información de reserva */
+    .reserva-info-container {
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: black;
+    }
+
+    /* Configuracion para mantener un distancia entre nav y footer */
+    .margenes{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* Estilos para los elementos dentro del contenedor */
+    .reserva-info-container h2 {
+        color: black;
+        margin-bottom: 5px;
+        font-size: 40px;
+    }
+
+    .reserva-info-container p {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+
+
+
+    /* Estilos del pie de página (Footer) */
+    .pie_pagina {
+        background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
+        color: white;
+        padding: 5px;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .pie_pagina h4 {
+        margin-bottom: 10px;
+    }
+
+    .info_contacto p, .redes_sociales a, .derechos p {
+        margin: 5px 0;
+    }
+
+    .redes_sociales a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .redes_sociales a:hover {
+        text-decoration: underline;
+    }

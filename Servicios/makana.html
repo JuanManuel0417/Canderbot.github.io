@@ -37,7 +37,26 @@
     <div class="Reservar">
         <div id="Texto_reserva">
             <h2>MAKANA NAILS</h2>
-            <button class="Boton_Reserva">Reservar Ahora</button>
+            <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar Ahora</button>
+            <div id="overlay">
+                <div id="formulario">
+                    <span id="cerrar" onclick="cerrarFormulario()">x</span>
+                    <h2>Reserva Ya</h2>
+                    <form>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                        <input type="text" id="documento" placeholder="Ingresa tu documento">
+    
+                        <input type="tel" id="tel" placeholder="Ingresa tu telefono"> 
+
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                        <input type="date" id="date" placeholder="Ingresa tu fecha de reserva">
+            
+                        <button type="button" onclick="guardarReserva(); alert('Reserva guardada.');" class="input_reserva">Reservar</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -54,7 +73,7 @@
                 <h3>Pedicure tradicional</h3>
                 <h4>1 h</h4>
                 <h4>16.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -63,7 +82,7 @@
                 <h3>Limpieza de manos</h3>
                 <h4>50 min</h4>
                 <h4>10.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -72,7 +91,7 @@
                 <h3>Limpieza de pies</h3>
                 <h4>50 min</h4>
                 <h4>10.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -81,7 +100,7 @@
                 <h3>Manicura semipermanente Hombre</h3>
                 <h4>1 h</h4>
                 <h4>20.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
     </div>
@@ -153,5 +172,7 @@
         </div>
     </footer>
     
+<script src="Java/servicios.js"></script>
+
 </body>
 </html>

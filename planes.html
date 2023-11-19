@@ -25,7 +25,6 @@
                     <a href="inicio.html">Inicio</a>
                     <a href="planes.html">Planes</a>
                     <a href="citas.html">Citas agendadas</a>
-                    <a href="favoritos.html">Favoritos</a>
                     <a href="contactanos.html">Contáctanos</a>
                     <a href="conocenos.html">Conocenos</a>
                     <a href="login.html">Cerrar sesión</a>
@@ -34,7 +33,6 @@
         </div>
     </div>
    
-
     <div>
         <h2 id="Canderbot">PLANES Y PRECIOS DE CANDERBOT</h2>
     </div>
@@ -60,7 +58,7 @@
                         </ul>
                     </li>
 
-                    <button class="Comprar_Basico">COMPRAR</button>
+                    <button class="Comprar_Basico" type="button" onclick="mostrarFormulario()">COMPRAR</button>
                 </li>
             </div>
 
@@ -83,7 +81,7 @@
                         </ul>
                     </li>
 
-                    <button class="Comprar_Premium">COMPRAR</button>
+                    <button class="Comprar_Premium" type="button" onclick="mostrarFormulario()">COMPRAR</button>
                 </li>
             </div>
 
@@ -106,10 +104,30 @@
                         </ul>
                     </li>
 
-                    <button class="Comprar_Empresarial">COMPRAR</button>
+                    <button class="Comprar_Empresarial" type="button" onclick="mostrarFormulario()">COMPRAR</button>
                 </li>
             </div>
     </ul>
+
+
+    <div id="overlay">
+        <div id="formulario">
+            <span id="cerrar" onclick="cerrarFormulario()">x</span>
+            <form>
+                <h2>Compra segura</h2>
+
+                <input type="text" id="nombre" name="nombre" placeholder="Número de tarjeta" required>
+
+                <input type="text" id="documento" placeholder="Nombre del titular">
+
+                <input type="tel" id="tel" placeholder="Fecha de Vencimiento"> 
+
+                <input type="email" id="email" name="email" placeholder="código de seguridad" required>
+
+                <button type="button" class="input_reserva" onclick="comprar()">Comprar</button>
+            </form>
+        </div>
+    </div>
 
 
     <footer class="pie_pagina">
@@ -130,6 +148,8 @@
             <p>&copy; 2023 Canderbot. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="Java/planes.js"></script>
 
 </body>
 </html>

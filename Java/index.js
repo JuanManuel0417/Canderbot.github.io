@@ -7,3 +7,4 @@ if (currentUser) {
     // Si hay un valor, actualizar el contenido del elemento con id "mostrarNombre"
     document.getElementById("mostrarNombre").textContent = currentUser;
 }
+

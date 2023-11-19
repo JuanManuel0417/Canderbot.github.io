@@ -270,8 +270,77 @@
     }
 
 
+
+    /* Estilos del formulario al dar click en compra*/
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #formulario {
+        color: black;
+        background-image: url('../Img1/Fondo_Principal.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative; 
+    }
+    
+    #cerrar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #f70808;
+    }
+
+
+    input{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: black;
+        margin-bottom: 15px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background: rgba(255, 255, 255, 0.3); 
+    }
+    
+
+    .input_reserva{
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: #243b55;
+        color: white;
+        font-size: 15px;
+        color: #fff;
+        border: 0 solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 1px solid;
+        outline-color: #243b55;
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+
+
     /* Estilos del pie de página (Footer) */
-    .pie_pagina {
+    .pie_pagina{
         background-image: linear-gradient(to bottom, #110f10, #211f20); /* Degradado hacia abajo */
         color: white;
         padding: 5px;
@@ -286,12 +355,12 @@
         margin: 5px 0;
     }
 
-    .redes_sociales a {
+    .redes_sociales a{ 
         color: white;
         margin: 0 10px;
         text-decoration: none;
     }
 
-    .redes_sociales a:hover {
+    .redes_sociales a:hover{ 
         text-decoration: underline;
     }

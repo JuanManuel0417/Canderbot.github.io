@@ -14,7 +14,11 @@
         <header class="superior">
             <img src="Img3/Logo_sin_fondo.png" alt="Imagen Cargando" width="10%" class="logo">
             <a href="../inicio.html"><button class="volver">Volver</button></a>
-               
+
+            <div class="contenedor_corazon">
+                <div id="corazon" class="corazon">&#x2665;</div>
+            </div>
+
         </header>
         
         <nav class="menu">
@@ -41,7 +45,26 @@
     <div class="Reservar">
         <div id="Texto_reserva">
             <h2>Rebel Barbers</h2>
-            <button class="Boton_Reserva">Reservar Ahora</button>
+            <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar Ahora</button>
+            <div id="overlay">
+                <div id="formulario">
+                    <span id="cerrar" onclick="cerrarFormulario()">x</span>
+                    <h2>Reserva Ya</h2>
+                    <form>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                        <input type="text" id="documento" placeholder="Ingresa tu documento">
+    
+                        <input type="tel" id="tel" placeholder="Ingresa tu telefono"> 
+
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                        <input type="date" id="date" placeholder="Ingresa tu fecha de reserva">
+            
+                        <button type="button" onclick="guardarReserva(); alert('Reserva guardada.');" class="input_reserva">Reservar</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -58,7 +81,7 @@
                 <h3>Corte de pelo exclusivo para hombres</h3>
                 <h4>30 min - solo hombres</h4>
                 <h4>60.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -67,7 +90,7 @@
                 <h3>Corte de pelo y recorte de barba</h3>
                 <h4>1 h - 2 Servicios</h4>
                 <h4>100.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -76,7 +99,7 @@
                 <h3>Corte de barba</h3>
                 <h4>30 min - solo hombres</h4>
                 <h4>60.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
 
@@ -85,7 +108,7 @@
                 <h3>Corte de pelo, afeitado y masaje capilar</h3>
                 <h4>1 h 20 min - 3 Servicios</h4>
                 <h4>100.000 COP</h4>
-                <button class="expand-button">+</button>
+                <button class="expand-button" onclick="mostrarFormulario()">+</button>
             </div>
         </div>
     </div>
@@ -155,5 +178,7 @@
         </div>
     </footer>
     
+    <script src="Java/servicios.js"></script>
+
 </body>
-</html>
+</html> 
