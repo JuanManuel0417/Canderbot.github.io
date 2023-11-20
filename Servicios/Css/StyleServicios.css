@@ -388,7 +388,7 @@
           
              .superior img {
                 margin-top: -10px;
-                width: 20%; /* Ajustar el ancho de la imagen superior */
+                width: 20%; 
              }
           
              .volver {
@@ -396,8 +396,18 @@
              }
           
              .menu {
-                margin-top: -30px;
-             }
+                margin-top: 20px;
+            }
+    
+            .menu ul {
+                padding: 0;
+            }
+    
+            .menu a {
+                display: block;
+                padding: 10px;
+                font-size: 18px;
+            }
         
             .Contenedor_Grande,
             .Contenedor_Grand {

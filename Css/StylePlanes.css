@@ -422,4 +422,12 @@
             margin-bottom: 20px; /* Ajuste el margen inferior según tus necesidades */
         }
 
+        .Comprar_Empresarial{
+            margin-top: 8%;
+        }
+
+        .Titulo_Basico, .Titulo_Premium, .Titulo_Empresarial{
+            margin-left: 8%;
+        }
+
     }
