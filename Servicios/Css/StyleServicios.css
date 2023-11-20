@@ -328,7 +328,7 @@
         padding: 10px;
         border-radius: 10px;
         width: 45%;
-        margin-left: 30px;
+        margin-left: 250px;
         margin-bottom: 5px;
     }
 
@@ -383,45 +383,35 @@
 
         @media screen and (max-width: 768px) {
             body {
-                background-attachment: scroll; /* Permitir que el fondo se desplace en dispositivos más pequeños */
-            }
-        
-            .superior {
-                flex-direction: column;
-                align-items: center;
-            }
-        
-            .superior img {
-                margin-top: 10px; /* Ajuste del margen superior de la imagen del logo */
-            }
-        
-            .menu {
-                margin-top: 0;
-            }
-        
-            .menu ul {
-                display: none;
-                flex-direction: column;
-                text-align: center;
-                position: absolute;
-                width: 100%;
-                background-color: #211f20;
-                z-index: 1;
-            }
-        
-            .menu a {
-                padding: 15px;
-                display: block;
-            }
-        
-            .menu:hover ul {
-                display: flex;
-            }
+                background-attachment: scroll;
+             }
+          
+             .superior img {
+                margin-top: -10px;
+                width: 20%; /* Ajustar el ancho de la imagen superior */
+             }
+          
+             .volver {
+                margin-top: 15px;
+             }
+          
+             .menu {
+                margin-top: -30px;
+             }
         
             .Contenedor_Grande,
             .Contenedor_Grand {
-                padding: 15px;
-                margin: 15px;
+               flex-direction: column;
+               align-items: center;
+               padding: 20px;
+               margin: 20px;
+            }
+         
+            .Imagen_Grande,
+            .Imagen_Pequeña {
+               width: 100%;
+               height: auto;
+               border-radius: 10px;
             }
         
             .Imagen_Pequeña {
@@ -455,13 +445,31 @@
             .Acerca_De,
             .horas,
             iframe,
-            .pie_pagina {
+            .pie_pagina,
+            .Servicios_Contenedor {
                 width: 100%;
                 margin-left: 0;
             }
+
+            .horas {
+                width: 100%;
+                margin-left: 0;
+                padding: 15px;
+                margin-bottom: 30px;
+            }
         
+            .Lunes {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+                border-radius: 10px;
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
             .expand-button {
-                margin-left: 50%;
+                margin-left: 80%;
             }
         }
     }

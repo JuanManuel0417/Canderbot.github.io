@@ -189,7 +189,6 @@
 
     .estrellas_2{
         display: inline-block;
-        cursor: pointer;
         color: #ffcc00;
         font-size: 24px;
     }
@@ -276,8 +275,7 @@
         }
 
         .Rebel :hover, .Supra :hover, .Siete :hover, .Rake :hover, .Fernanda_Castillo :hover, .Glan_Vives :hover, .Makana :hover, .Luxe :hover, .Paris :hover {
-            width: 90%;
-            margin: 10px 5%;
+            pointer-events: none;
         }
 
         .banner {
