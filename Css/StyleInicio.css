@@ -106,13 +106,14 @@
        color: white;
    }
 
-
+   
   /* Estilos del ul, cada ul contiene 3 li principales, osea 3 filas */
    .Contenidos{
+        justify-content: center;
+        align-items: center;
         list-style-type: none;
         padding: 0;
         display: flex; 
-        margin-left: 30px;
         color: black;
    }
   

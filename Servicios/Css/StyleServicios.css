@@ -191,11 +191,8 @@
     }
     
     #formulario {
-        color: black;
-        background-image: url('../Img3/fondo_reserva.jpg');
-        background-size: cover;
-        background-repeat: no-repeat; 
-        background-attachment: fixed;
+        color: white;
+        background-image: linear-gradient(to bottom, #110f10, #211f20);
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
